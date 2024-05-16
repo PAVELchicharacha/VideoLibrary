@@ -1,0 +1,80 @@
+﻿<Window x:Class="VideoLibrary.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VideoLibrary"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="1000">
+    <Grid Background="Aqua">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Grid.Row="1" HorizontalAlignment="Center">
+            <Button Content="Добавить фильм" Width="110" Height="50" Margin="10 0" Click="Button_Click"/>
+            <Button Content="Обновить список фильмов" Width="165" Height="50" Margin="10 0" Click="Button_Click_1"/>
+            <Button Content="Удалить" Width="110" Height="50" Margin="10 0" Click="Button_Click_2"/>
+        </StackPanel>
+        <Grid Background="Coral">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <StackPanel  Grid.Column="0">
+                <TextBlock Text="ID" FontWeight="Bold" HorizontalAlignment="Center"/>
+                <TextBlock Height="388"  />
+            </StackPanel>
+            <StackPanel  Grid.Column="1">
+                <TextBlock Text="название" FontWeight="Bold" HorizontalAlignment="Center"/>
+                <TextBlock Height="388"  />
+            </StackPanel>
+            <StackPanel  Grid.Column="2">
+                <TextBlock Text="год выпуска" FontWeight="Bold" HorizontalAlignment="Center"/>
+                <TextBlock Height="388"  />
+            </StackPanel>
+            <StackPanel  Grid.Column="3">
+                <TextBlock Text="режисер" FontWeight="Bold" HorizontalAlignment="Center" Height="20" Width="67"/>
+                <TextBlock Height="388"  />
+            </StackPanel>
+            <StackPanel  Grid.Column="4">
+                <TextBlock Text="актеры" FontWeight="Bold" HorizontalAlignment="Center"/>
+                <TextBlock Height="388"  />
+            </StackPanel>
+            <StackPanel  Grid.Column="5">
+                <TextBlock Text="оценка" FontWeight="Bold" HorizontalAlignment="Center"/>
+                <TextBlock Height="388"  />
+            </StackPanel>
+            <StackPanel  Grid.Column="6">
+                <TextBlock Text="жанр" FontWeight="Bold" HorizontalAlignment="Center"/>
+                <TextBlock Height="388"  />
+            </StackPanel>
+            <StackPanel  Grid.Column="7">
+                <TextBlock Text="цена" FontWeight="Bold" HorizontalAlignment="Center"/>
+                <TextBlock Height="388"  />
+            </StackPanel>
+            <StackPanel  Grid.Column="8">
+                <TextBlock Text="возр.огр" FontWeight="Bold" HorizontalAlignment="Center"/>
+                <TextBlock Height="388"  />
+            </StackPanel>
+            <StackPanel  Grid.Column="9">
+                <TextBlock Text="покупка" FontWeight="Bold" HorizontalAlignment="Center"/>
+                <TextBlock Height="388"  />
+            </StackPanel>
+            <StackPanel  Grid.Column="10">
+                <TextBlock Text="тариф" FontWeight="Bold" HorizontalAlignment="Center"/>
+                <TextBlock Height="388"  />
+            </StackPanel>
+
+        </Grid>
+    </Grid>
+</Window>
