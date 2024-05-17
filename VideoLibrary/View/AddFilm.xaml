@@ -36,43 +36,43 @@
             </StackPanel>
             <StackPanel  Grid.Column="1">
                 <TextBlock Text="название" FontWeight="Bold" HorizontalAlignment="Center"/>
-                <TextBox Height="376" x:Name="Name" />
+                <TextBox Height="376" x:Name="tbName" />
             </StackPanel>
             <StackPanel  Grid.Column="2">
                 <TextBlock Text="год выпуска" FontWeight="Bold" HorizontalAlignment="Center"/>
-                <TextBox Height="388" x:Name="Issue" />
+                <TextBox Height="388" x:Name="tbIssue" />
             </StackPanel>
             <StackPanel  Grid.Column="3">
                 <TextBlock Text="режисер" FontWeight="Bold" HorizontalAlignment="Center" />
-                <TextBox Height="388" x:Name="Director" />
+                <TextBox Height="388" x:Name="tbDirector" />
             </StackPanel>
             <StackPanel  Grid.Column="4">
                 <TextBlock Text="актеры" FontWeight="Bold" HorizontalAlignment="Center"/>
-                <TextBox Height="388" x:Name="Actors" />
+                <TextBox Height="388" x:Name="tbActors" />
             </StackPanel>
             <StackPanel  Grid.Column="5">
                 <TextBlock Text="оценка" FontWeight="Bold" HorizontalAlignment="Center"/>
-                <TextBox Height="388" x:Name="Urate" />
+                <TextBox Height="388" x:Name="tbUrate" />
             </StackPanel>
             <StackPanel  Grid.Column="6">
                 <TextBlock Text="жанр" FontWeight="Bold" HorizontalAlignment="Center"/>
-                <TextBox Height="388" x:Name="Genre" />
+                <TextBox Height="388" x:Name="tbGenre" />
             </StackPanel>
             <StackPanel  Grid.Column="7">
                 <TextBlock Text="цена" FontWeight="Bold" HorizontalAlignment="Center"/>
-                <TextBox Height="388" x:Name="Coast" />
+                <TextBox Height="388" x:Name="tbCoast" />
             </StackPanel>
             <StackPanel  Grid.Column="8">
                 <TextBlock Text="возр.огр" FontWeight="Bold" HorizontalAlignment="Center"/>
-                <TextBox Height="388" x:Name="ALim" />
+                <TextBox Height="388" x:Name="tbALim" />
             </StackPanel>
             <StackPanel  Grid.Column="9">
                 <TextBlock Text="покупка" FontWeight="Bold" HorizontalAlignment="Center"/>
-                <TextBox Height="388" x:Name="Purchaseld" />
+                <TextBox Height="388" x:Name="tbPurchaseld" />
             </StackPanel>
             <StackPanel  Grid.Column="10">
                 <TextBlock Text="тариф" FontWeight="Bold" HorizontalAlignment="Center"/>
-                <TextBox Height="388" x:Name="TName" />
+                <TextBox Height="388" x:Name="tbTName" />
             </StackPanel>
 
         </Grid>

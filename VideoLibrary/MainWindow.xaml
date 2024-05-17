@@ -31,7 +31,7 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
             <StackPanel  Grid.Column="0">
-                <TextBlock Text="ID" FontWeight="Bold" HorizontalAlignment="Center"/>
+                <TextBlock  Text="ID" FontWeight="Bold" HorizontalAlignment="Center"/>
                 <TextBlock Height="388"  />
             </StackPanel>
             <StackPanel  Grid.Column="1">
@@ -74,7 +74,6 @@
                 <TextBlock Text="тариф" FontWeight="Bold" HorizontalAlignment="Center"/>
                 <TextBlock Height="388"  />
             </StackPanel>
-
         </Grid>
     </Grid>
 </Window>
