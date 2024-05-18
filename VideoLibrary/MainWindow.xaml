@@ -17,63 +17,19 @@
             <Button Content="Удалить" Width="110" Height="50" Margin="10 0" Click="Button_Click_2"/>
         </StackPanel>
         <Grid Background="Coral">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
-            <StackPanel  Grid.Column="0">
-                <TextBlock Text="ID" FontWeight="Bold" HorizontalAlignment="Center"/>
-                <TextBlock Height="388"  />
-            </StackPanel>
-            <StackPanel  Grid.Column="1">
-                <TextBlock Text="название" FontWeight="Bold" HorizontalAlignment="Center"/>
-                <TextBlock Height="388"  />
-            </StackPanel>
-            <StackPanel  Grid.Column="2">
-                <TextBlock Text="год выпуска" FontWeight="Bold" HorizontalAlignment="Center"/>
-                <TextBlock Height="388"  />
-            </StackPanel>
-            <StackPanel  Grid.Column="3">
-                <TextBlock Text="режисер" FontWeight="Bold" HorizontalAlignment="Center" Height="20" Width="67"/>
-                <TextBlock Height="388"  />
-            </StackPanel>
-            <StackPanel  Grid.Column="4">
-                <TextBlock Text="актеры" FontWeight="Bold" HorizontalAlignment="Center"/>
-                <TextBlock Height="388"  />
-            </StackPanel>
-            <StackPanel  Grid.Column="5">
-                <TextBlock Text="оценка" FontWeight="Bold" HorizontalAlignment="Center"/>
-                <TextBlock Height="388"  />
-            </StackPanel>
-            <StackPanel  Grid.Column="6">
-                <TextBlock Text="жанр" FontWeight="Bold" HorizontalAlignment="Center"/>
-                <TextBlock Height="388"  />
-            </StackPanel>
-            <StackPanel  Grid.Column="7">
-                <TextBlock Text="цена" FontWeight="Bold" HorizontalAlignment="Center"/>
-                <TextBlock Height="388"  />
-            </StackPanel>
-            <StackPanel  Grid.Column="8">
-                <TextBlock Text="возр.огр" FontWeight="Bold" HorizontalAlignment="Center"/>
-                <TextBlock Height="388"  />
-            </StackPanel>
-            <StackPanel  Grid.Column="9">
-                <TextBlock Text="покупка" FontWeight="Bold" HorizontalAlignment="Center"/>
-                <TextBlock Height="388"  />
-            </StackPanel>
-            <StackPanel  Grid.Column="10">
-                <TextBlock Text="тариф" FontWeight="Bold" HorizontalAlignment="Center"/>
-                <TextBlock Height="388"  />
-            </StackPanel>
+
+            <DataGrid x:Name="FilmGrid" Grid.Row="0">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Название" Binding="{Binding Film.Name}" Width="*"/>
+                    <DataGridTextColumn Header="Жанр" Binding="{Binding Genre}" Width="*"/>
+                    <DataGridTextColumn Header="Год выпуска" Binding="{Binding YearOfIssue}" Width="*"/>
+                    <DataGridTextColumn Header="Режиссер" Binding="{Binding Director}" Width="*"/>
+                    <DataGridTextColumn Header="Главный актер" Binding="{Binding MainActor}" Width="*"/>
+                    <DataGridTextColumn Header="Оценка пользователей" Binding="{Binding UserRate}" Width="*"/>
+                    <DataGridTextColumn Header="Цена" Binding="{Binding FilmCoast}" Width="*"/>
+
+                </DataGrid.Columns>
+            </DataGrid>
 
         </Grid>
     </Grid>

@@ -30,7 +30,7 @@ namespace VideoLibrary.View
         private void Button_Click(object sender, RoutedEventArgs e)//save
         {
            // Film film = new Film(Convert.ToInt32(ID), Name.Text, Convert.ToDateTime(Issue), Director.Text, Actors.Text, Convert.ToInt32(Urate), Genre.Text, Convert.ToInt32(Coast), Convert.ToInt32(ALim), Convert.ToInt32(Purchaseld), TName.Text);
-            MessageBox.Show("Успешно!");
+            
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)//update

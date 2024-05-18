@@ -8,6 +8,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using VideoLibrary.Models;
 using VideoLibrary.View;
 
 namespace VideoLibrary
@@ -17,11 +18,21 @@ namespace VideoLibrary
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        private static MainWindow _context;
         public MainWindow()
         {
+           
             
         }
 
+        public static MainWindow GetContext()
+        {
+            if (_context == null)
+                _context = new MainWindow();
+
+            return _context;
+        }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             AddFilm film = new AddFilm();
